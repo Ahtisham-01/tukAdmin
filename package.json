@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "codemirror": "^5.65.12",
     "install": "^0.13.0",
     "jwt-decode": "^3.1.2",
     "next": "13.2.4",
@@ -18,6 +17,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^8.0.5",
+    "react-simple-code-editor": "^0.13.1",
     "react-toastify": "^9.1.1"
   },
   "devDependencies": {

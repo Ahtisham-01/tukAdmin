@@ -6,11 +6,12 @@ import Spinner from "../../reusableUi/spinner"
 // import 'codemirror/lib/codemirror.css';
 // import 'codemirror/theme/material.css';
 // import "codemirror/mode/javascript/javascript";
+import Editor from 'react-simple-code-editor';
+import { highlight, languages } from 'prismjs/components/prism-core';
+import 'prismjs/components/prism-clike';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/themes/prism.css';
 
-import CodeMirror from 'codemirror'
-import 'codemirror/theme/<myTheme>.css'
-import 'codemirror/mode/javascript/javascript.js';
-import CodeMirror from 'codemirror/lib/codemirror.js';
 
 // import { UnControlled as CodeMirror } from 'react-codemirror2'
 
@@ -31,16 +32,16 @@ const Index = ({ setaddIntegration, addIntegration, customerData, setIntegration
     const { data: allComponents } = useGetAllComponentsQuery()
     // checking live data in inputs whether its filled or not
     //Code editor
-    const editor = useRef()
-    const wrapper = useRef()
-    const editorWillUnmount = () => {
-        editor.current.display.wrapper.remove()
+    // const editor = useRef()
+    // const wrapper = useRef()
+    // const editorWillUnmount = () => {
+    //     editor.current.display.wrapper.remove()
 
-    }
+    // }
 
-    const handleChange1 = (editor, data, value) => {
-        setCode(value);
-    };
+    // const handleChange1 = (editor, data, value) => {
+    //     setCode(value);
+    // };
 
 
     const validateForm = () => {
@@ -242,7 +243,7 @@ const Index = ({ setaddIntegration, addIntegration, customerData, setIntegration
                                 
                             /> */}
                             <label htmlFor="Description" className=" text-zinc-800 text-sm leading-[14px] font-medium manrope_font ">Code</label>
-                            <CodeMirror
+                            {/* <CodeMirror
 
                                 value={code}
                                 options={{
@@ -253,6 +254,16 @@ const Index = ({ setaddIntegration, addIntegration, customerData, setIntegration
                                 onChange={handleChange1}
                                 editorDidMount={(e) => editor.current = e}
                                 editorWillUnmount={editorWillUnmount}
+                            /> */}
+                            <Editor
+                                value={code}
+                                onValueChange={code => setCode(code)}
+                                highlight={code => highlight(code, languages.js)}
+                                padding={10}
+                                style={{
+                                    fontFamily: '"Fira code", "Fira Mono", monospace',
+                                    fontSize: 12,
+                                }}
                             />
                         </div>
 
