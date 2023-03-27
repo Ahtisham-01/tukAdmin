@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "codemirror": "^6.0.1",
+    "codemirror": "^5.65.12",
     "install": "^0.13.0",
     "jwt-decode": "^3.1.2",
     "next": "13.2.4",
