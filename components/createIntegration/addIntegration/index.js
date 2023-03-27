@@ -9,7 +9,7 @@ import Spinner from "../../reusableUi/spinner"
 
 
 
-import { UnControlled as CodeMirror } from 'react-codemirror2'
+// import { UnControlled as CodeMirror } from 'react-codemirror2'
 
 import { useCreateIntegrationMutation, useGetAllComponentsQuery, useUpdateIntegrationMutation } from "../../../features/api/dataApiSlice"
 
@@ -239,7 +239,7 @@ const Index = ({ setaddIntegration, addIntegration, customerData, setIntegration
                                 
                             /> */}
                             <label htmlFor="Description" className=" text-zinc-800 text-sm leading-[14px] font-medium manrope_font ">Code</label>
-                            <CodeMirror
+                            {/* <CodeMirror
 
                                 value={code}
                                 options={{
@@ -250,7 +250,7 @@ const Index = ({ setaddIntegration, addIntegration, customerData, setIntegration
                                 onChange={handleChange1}
                                 editorDidMount={(e) => editor.current = e}
                                 editorWillUnmount={editorWillUnmount}
-                            />
+                            /> */}
                         </div>
 
                     </div>
