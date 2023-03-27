@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    
     "@reduxjs/toolkit": "^1.9.3",
     "install": "^0.13.0",
     "jwt-decode": "^3.1.2",
