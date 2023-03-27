@@ -3,17 +3,11 @@ import Input from "../../reusableUi/inputLogin"
 import Spinner from "../../reusableUi/spinner"
 
 //Code editor
-// import 'codemirror/lib/codemirror.css';
-// import 'codemirror/theme/material.css';
-// import "codemirror/mode/javascript/javascript";
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/material.css';
+import "codemirror/mode/javascript/javascript";
 
-// import CodeMirror from 'codemirror'
-// import 'codemirror/theme/<myTheme>.css'
-// import 'codemirror/mode/javascript/javascript.js';
-// import CodeMirror from 'codemirror/lib/codemirror.js';
-import CodeMirror from 'react-codemirror2';
-require('codemirror/mode/xml/xml');
-require('codemirror/mode/javascript/javascript');
+
 
 // import { UnControlled as CodeMirror } from 'react-codemirror2'
 
