@@ -9,7 +9,7 @@ import "codemirror/mode/javascript/javascript";
 
 
 
-// import { UnControlled as CodeMirror } from 'react-codemirror2'
+import { UnControlled as CodeMirror } from 'react-codemirror2'
 
 import { useCreateIntegrationMutation, useGetAllComponentsQuery, useUpdateIntegrationMutation } from "../../../features/api/dataApiSlice"
 
