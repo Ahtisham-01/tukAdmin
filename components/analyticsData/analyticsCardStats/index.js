@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import BlackSpinner from "../../reusableUi/blackSpinner"
 import Link from "next/link"
-
+import ProgressBar from "../../analyticsData/progressBarResolvedTicket"
 
 const Index = ({ analyticsData }) => {
     // Base URL
@@ -187,6 +187,22 @@ const Index = ({ analyticsData }) => {
                                         View All
                                     </p>
                                 </button>
+                            </div>
+                        </div>
+
+                        <div className="relative w-full flex justify-center max-w-[151px] h-[88px]">
+                            <div className="w-36 h-24  bg-white  rounded-lg ">
+                                <img
+                                    className="max-w-36 w-full h-20 absolute object-cover left-0 top-[74px] rounded-full"
+                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/GaugeIcon.png"
+                                />
+                            </div>
+                            <div className="mt-1">
+                                <ProgressBar
+                                    percentage={
+                                        analyticsData?.percentageComplete
+                                    }
+                                />
                             </div>
                         </div>
                     </div>
