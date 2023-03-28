@@ -200,7 +200,7 @@ const Index = ({ analyticsData }) => {
                             <div className="mt-1">
                                 <ProgressBar
                                     percentage={
-                                        analyticsData?.percentageComplete
+                                        analyticsData?.id
                                     }
                                 />
                             </div>

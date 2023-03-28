@@ -12,7 +12,7 @@
     "@reduxjs/toolkit": "^1.9.3",
     "install": "^0.13.0",
     "jwt-decode": "^3.1.2",
-    "next": "13.2.4",
+    "next": "12.3.1",
     "npm": "^9.6.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
